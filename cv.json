@@ -1,12 +1,12 @@
 {
     "basics": {
-      "name": "Samuel Junior Charles Saint-Jean",
+      "name": "Samuel Junior M. Charles Saint-Jean",
       "label": "Ingeniero de software con experiencia en desarrollo web, desarrollo de aplicaciones moviles y desarrollo de aplicaciones de escritorio.",
       "image": "",
       "email": "samuelcharlessj30@gmail.com",
       "phone": "+1 829 906 1039",
       "url": "",
-      "summary": "+6 meses de experiencia como Desarrollador Web. Egresado del Instituto Tecnológico de Santo Domingo (INTEC). Actualmente estoy trabajando como desarrollador freelancer en el Banreservas. Busco nuevas oportunidades para seguir creciendo profesionalmente.",
+      "summary": "Aproximadamente 1 año de experiencia como Desarrollador Web. Egresado del Instituto Tecnológico de Santo Domingo (INTEC). Actualmente estoy trabajando como desarrollador freelancer en el Banreservas. Busco nuevas oportunidades para seguir creciendo profesionalmente.",
       "location": {
         "address": "",
         "postalCode": "",
@@ -36,7 +36,7 @@
         "url": "",
         "startDate": "Agosto 2023",
         "endDate": null,
-        "summary": "Desarrollo de APIs RESTful escalables integrando bases de datos SQL Server y servicios externos para la empresa (Banreservas) sub-contratado por Metaconxept. Mantenimiento, seguimiento y control de los sistemas informaticos a la que estoy sub-contratada (Banreservas).",
+        "summary": "Desarrollo de APIs RESTful escalables integrando bases de datos SQL Server y servicios externos para la empresa (Banreservas) sub-contratado por Metaconxept. Mantenimiento, seguimiento y control de los sistemas informaticos de la empresa.(Banreservas).",
         "highlights": [
           ""
         ]
@@ -47,7 +47,7 @@
         "url": "",
         "startDate": "Agosto 2022",
         "endDate": "Julio 2023",
-        "summary": "Implementación y personalización de módulos de facturación en el sistema ERP. Análisis y documentación de requerimientos para la adeciación de la logíca de facturación de la empresa. Responsable de identificar requerimientos del usuario e diseñar los servicios de facturación.",
+        "summary": "Implementación y personalización de módulos de facturación en el sistema ERP. Análisis y documentación de requerimientos para la adecuación de la logíca de facturación de la empresa. Responsable de identificar requerimientos del usuario y diseñar los servicios de facturación.",
         "highlights": [
           ""
         ]
@@ -64,18 +64,32 @@
         "Awarded 'Volunteer of the Month'"
       ]
     }],
-    "education": [{
-      "institution": "Universitat Oberta de Catalunya",
-      "url": "https://www.uoc.edu/portal/es/index.html",
-      "area": "Ingeniero de Software",
+    "education": [
+    {
+      "institution": "CodeCademy",
+      "url": "https://www.intec.edu.do",
+      "area": "Certificado de Desarrollador Front-End",
       "studyType": "Bachelor",
-      "startDate": "2003-01-01",
-      "endDate": "2009-01-01",
+      "startDate": "2023-12-01",
+      "endDate": null,
       "score": "4.0",
       "courses": [
         "DB1101 - Basic SQL"
       ]
-    }],
+    },
+    {
+      "institution": "Instituto Tecnológico de Santo Domingo (INTEC)",
+      "url": "https://www.intec.edu.do",
+      "area": "Ingeniero de Software",
+      "studyType": "Bachelor",
+      "startDate": "2021-01-01",
+      "endDate": "2024-01-01",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }
+  ],
     "awards": [{
       "title": "Award",
       "date": "2014-11-01",
@@ -83,9 +97,10 @@
       "summary": "There is no spoon."
     }],
     "certificates": [{
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
+      "name": "Front-End Web Developer",
+      "startDate": "2023-12-01",
+      "endDate": null,
+      "issuer": "CodeCademy",
       "url": "https://certificate.com"
     }],
     "publications": [{
@@ -225,7 +240,7 @@
       {
         "name": "INTECNOLGIA",
         "isActive": false,
-        "description": "Aplicación de celular que escanea códigos QR de los puestos de exibición y se brinda un premio al conseguir todos.",
+        "description": "Aplicación de celular que escanea códigos QR de los puestos de exibición y se brinda un premio al conseguir todos los códigos.",
         "highlights": [
           "Microsoft SQL Server",
           "ASP.NET Web API",

@@ -15,6 +15,8 @@ const SOCIAL_ICONS: Record<string, string | any> = {
 
     GitHub
 }
+
+const printInfo = [email, phone].filter(Boolean).join(' | ')
 ---
 
 <Section>
@@ -27,7 +29,10 @@ const SOCIAL_ICONS: Record<string, string | any> = {
                     <WorldMap />
                     {city}, {region}
                 </span>
-                <footer>
+                <footer class="print">
+                    {printInfo}
+                </footer>
+                <footer class="no-print">
                     {
                         email && (
                             <a 
@@ -98,7 +103,10 @@ const SOCIAL_ICONS: Record<string, string | any> = {
         justify-content: space-between;
         align-items: center;
         gap: 0.5rem;
-        margin-top: 1rem;
+    }
+
+    .print{
+        font-size: .7rem;
     }
 
     h1{

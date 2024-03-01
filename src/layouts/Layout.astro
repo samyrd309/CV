@@ -89,12 +89,70 @@ const { title } = Astro.props;
       display: block !important;
     }
 
+    h2{
+      margin-bottom: 15px;
+    }
+
     astro-dev-toolbar {
       display: none !important;
     }
 
     article {
       break-inside: avoid;
+    }
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      font-size: 1.125rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 1.25rem;
+    }
+
+    h2 {
+      font-size: 1.125rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+    }
+  }
+
+  @media (max-width: 300px) {
+    h1 {
+      font-size: 1.125rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    h3 {
+      font-size: 0.875rem;
+    }
+
+    p {
+      font-size: 0.75rem;
     }
   }
 </style>
