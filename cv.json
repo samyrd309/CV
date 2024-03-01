@@ -1,7 +1,7 @@
 {
     "basics": {
       "name": "Samuel Junior Charles Saint-Jean",
-      "label": "Ingeniero de software con experiencia en desarrollo web, desarrollo de aplicaciones moviles y desarrollo de aplicaciones de escritorio. Actualmente estoy trabajando como desarrollador freelancer en el Banreservas.",
+      "label": "Ingeniero de software con experiencia en desarrollo web, desarrollo de aplicaciones moviles y desarrollo de aplicaciones de escritorio.",
       "image": "",
       "email": "samuelcharlessj30@gmail.com",
       "phone": "+1 829 906 1039",
@@ -18,13 +18,13 @@
         {
           "network": "LinkedIn",
           "username": "",
-          "url": ""
+          "url": "https://www.linkedin.com/in/samuel-junior-matheo-charles-saint-jean-7398061b6/"
         },
 
         {
           "network": "GitHub",
-          "username": "midudev",
-          "url": "https://github.com/midudev"
+          "username": "samyrd309",
+          "url": "https://github.com/samyrd309?tab=repositories"
         }        
        
       ]
@@ -42,7 +42,7 @@
         ]
       },
       {
-        "name": "QUDIF",
+        "name": "Qudif",
         "position": "Desarrollador Backend Junior",
         "url": "",
         "startDate": "Agosto 2022",
@@ -165,6 +165,27 @@
         "keywords": [
           "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
         ]
+      },
+      {
+        "name": "Astro",
+        "level": "Básico",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+        ]
+      },
+      {
+        "name": "C#",
+        "level": "Intermedio",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "Backend"
+        ]
+      },
+      {
+        "name": "ASP.NET",
+        "level": "Intermedio",
+        "keywords": [
+          "Desarrollo Web", "Backend"
+        ]
       }
     ],
     "languages": [
@@ -190,14 +211,27 @@
     }],
     "projects": [
       {
-        "name": "",
-        "isActive": true,
-        "description": "",
+        "name": "OMSAPP",
+        "isActive": false,
+        "description": "Sistema gestor de rutas de autobuses, autobuses, paradas y estimación de llegada en tiempo real de autobus.",
         "highlights": [
-          "",
-          ""
+          "React",
+          "React-Native",
+          "Microsoft SQL Server",
+          "SignalR"
         ],
-        "url": ""
+        "url": "#"
+      },
+      {
+        "name": "INTECNOLGIA",
+        "isActive": false,
+        "description": "Aplicación de celular que escanea códigos QR de los puestos de exibición y se brinda un premio al conseguir todos.",
+        "highlights": [
+          "Microsoft SQL Server",
+          "ASP.NET Web API",
+          "React-Native"
+        ],
+        "url": "#"
       }
     ]
   }
