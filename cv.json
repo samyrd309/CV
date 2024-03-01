@@ -24,7 +24,7 @@
         {
           "network": "GitHub",
           "username": "samyrd309",
-          "url": "https://github.com/samyrd309?tab=repositories"
+          "url": "https://github.com/samyrd309"
         }        
        
       ]
@@ -36,7 +36,7 @@
         "url": "",
         "startDate": "Agosto 2023",
         "endDate": null,
-        "summary": "Desarrollo de APIs RESTful escalables integrando bases de datos SQL Server y servicios externos para la empresa (Banreservas) sub-contratado por Metaconxept. Mantenimiento, seguimiento y control de los sistemas informaticos de la empresa.(Banreservas).",
+        "summary": "Desarrollo de APIs RESTful escalables integrando bases de datos SQL Server y servicios externos para la empresa (Banreservas) sub-contratado por Metaconxept. Mantenimiento, seguimiento y control de los sistemas informaticos de la empresa (Banreservas).",
         "highlights": [
           ""
         ]
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "institution": "Instituto Tecnológico de Santo Domingo (INTEC)",
+      "institution": "INTEC",
       "url": "https://www.intec.edu.do",
       "area": "Ingeniero de Software",
       "studyType": "Bachelor",
