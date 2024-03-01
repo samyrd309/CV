@@ -22,56 +22,58 @@ const SOCIAL_ICONS: Record<string, string | any> = {
         <div class="info">
             <h1>{name}</h1>
             <h2>{label}</h2>
-            <span>
-                <WorldMap />
-                {city}, {region}
-            </span>
-            <footer>
-                {
-                    email && (
-                        <a 
-                            href={`mailto:${email}`}
-                            title={`Enviar un correo electrónico a ${name} al correo ${email}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Mail />
-                        </a>
-                    )
-                }
-
-                {
-                    phone && (
-                        <a 
-                            href={`tel:${phone}`}
-                            title={`Llamar a ${name} al número ${phone}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Phone />
-                        </a>
-                    )
-                }
-
-                {
-                    profiles.map((profile, index) => {
-                        const {network, url} = profile
-                        const Icon = SOCIAL_ICONS[network]
-
-                        return (
+            <div>
+                <span>
+                    <WorldMap />
+                    {city}, {region}
+                </span>
+                <footer>
+                    {
+                        email && (
                             <a 
-                                href={url}
-                                title={`Visitar el perfil de ${name} en ${network}`}
+                                href={`mailto:${email}`}
+                                title={`Enviar un correo electrónico a ${name} al correo ${email}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <Icon />
+                                <Mail />
                             </a>
                         )
-                    })
-                }
-
-            </footer>
+                    }
+    
+                    {
+                        phone && (
+                            <a 
+                                href={`tel:${phone}`}
+                                title={`Llamar a ${name} al número ${phone}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Phone />
+                            </a>
+                        )
+                    }
+    
+                    {
+                        profiles.map((profile, index) => {
+                            const {network, url} = profile
+                            const Icon = SOCIAL_ICONS[network]
+    
+                            return (
+                                <a 
+                                    href={url}
+                                    title={`Visitar el perfil de ${name} en ${network}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Icon />
+                                </a>
+                            )
+                        })
+                    }
+    
+                </footer>
+            </div>
         </div>
     </div>
 </Section>
@@ -91,6 +93,14 @@ const SOCIAL_ICONS: Record<string, string | any> = {
         gap: 0.5rem;
     }
 
+    .info div {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
     h1{
         font-size: 2.5rem;
         margin: 1rem 0;
@@ -108,7 +118,7 @@ const SOCIAL_ICONS: Record<string, string | any> = {
         display: flex;
         align-items: center;
         gap:0.25rem;
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         letter-spacing: -0.05rem;
     }
 
@@ -116,7 +126,7 @@ const SOCIAL_ICONS: Record<string, string | any> = {
         display: flex;
         flex-direction: row;
         gap: 0.5rem;
-        margin-top: 1rem;
+        
     }
 
     footer a {

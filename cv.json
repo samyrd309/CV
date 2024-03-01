@@ -6,7 +6,7 @@
       "email": "samuelcharlessj30@gmail.com",
       "phone": "+1 829 906 1039",
       "url": "",
-      "summary": "+6 meses de experiencia como Desarrollador Web. Egresado del Instituto Tecnológico de Santo Domingo(INTEC). Actualmente estoy trabajando como desarrollador freelancer en el Banreservas. Busco nuevas oportunidades para seguir creciendo profesionalmente.",
+      "summary": "+6 meses de experiencia como Desarrollador Web. Egresado del Instituto Tecnológico de Santo Domingo (INTEC). Actualmente estoy trabajando como desarrollador freelancer en el Banreservas. Busco nuevas oportunidades para seguir creciendo profesionalmente.",
       "location": {
         "address": "",
         "postalCode": "",
@@ -31,12 +31,23 @@
     },
     "work": [
       {
-        "name": "",
-        "position": "",
+        "name": "Metaconxept",
+        "position": "Desarrollador Externo Junior",
         "url": "",
-        "startDate": "",
+        "startDate": "Agosto 2023",
         "endDate": null,
-        "summary": "",
+        "summary": "Desarrollo de APIs RESTful escalables integrando bases de datos SQL Server y servicios externos para la empresa (Banreservas) sub-contratado por Metaconxept. Mantenimiento, seguimiento y control de los sistemas informaticos a la que estoy sub-contratada (Banreservas).",
+        "highlights": [
+          ""
+        ]
+      },
+      {
+        "name": "QUDIF",
+        "position": "Desarrollador Backend Junior",
+        "url": "",
+        "startDate": "Agosto 2022",
+        "endDate": "Julio 2023",
+        "summary": "Implementación y personalización de módulos de facturación en el sistema ERP. Análisis y documentación de requerimientos para la adeciación de la logíca de facturación de la empresa. Responsable de identificar requerimientos del usuario e diseñar los servicios de facturación.",
         "highlights": [
           ""
         ]
@@ -121,7 +132,7 @@
         ]
       },
       {
-        "name": "Microsoft SQL Server",
+        "name": "Microsoft SQL",
         "level": "Intermedio",
         "keywords": [
           "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
@@ -143,6 +154,13 @@
       },
       {
         "name": "React",
+        "level": "Básico",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+        ]
+      },
+      {
+        "name": "React-Native",
         "level": "Básico",
         "keywords": [
           "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
