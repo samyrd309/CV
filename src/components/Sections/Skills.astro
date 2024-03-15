@@ -2,9 +2,10 @@
 import Section from "../Section.astro"
 
 import { skills } from "@cv"
+const {title} = Astro.props
 ---
 
-<Section title="Habilidades">
+<Section title={title}>
     <ul>
         {skills.map(({name}) => (
             <li>

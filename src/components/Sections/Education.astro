@@ -1,15 +1,20 @@
 ---
 import Section from "../Section.astro"
 
-import {  education, certificates } from "@cv";
+import {getLangFromUrl, useTranslations} from '@/i18n/utils.ts'
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+let education = t("education")
+const {title} = Astro.props
 ---
 
-<Section title="Educación">
+<Section title={title}>
     <ul>
         {
-            education.map(({institution, startDate, endDate, area}) =>{
+            education.map(({institution, startDate, endDate, area}: {institution: string, startDate: string, endDate: string, area: string}) =>{
                 const startYear = new Date(startDate).getFullYear();
-                const endYear = endDate!=null ? new Date(endDate).getFullYear() : "Actualidad";
+                const endYear = endDate!=null ? new Date(endDate).getFullYear() : t('expirienceTimeNow');
                 const years = `${startYear} - ${endYear}`;
 
                 return(

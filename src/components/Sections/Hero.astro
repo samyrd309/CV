@@ -1,18 +1,26 @@
 ---
-import {basics} from '@cv'
+
 import Section from '@/components/Section.astro'
 import Mail from '@/icons/Mail.astro'
 import Phone from '@/icons/Phone.astro'
 import LinkedIn from '@/icons/LinkedIn.astro'
 import GitHub from '@/icons/GitHub.astro'
 import WorldMap from '@/icons/WorldMap.astro'
+import {getLangFromUrl, useTranslations} from '@/i18n/utils.ts'
+import {getOtherLanguage, languages} from '@/i18n/ui.ts'
+let lang = getLangFromUrl(Astro.url)
+if (!lang) {
+    lang = 'es'; // asume español si el idioma actual no está definido
+}
+const otherLanguage = getOtherLanguage(lang);
+const t = useTranslations(lang)
+let basics = t('basics')
 
 const {name, label, image, location, profiles, phone, email} = basics
 const {city, region} = location
 
 const SOCIAL_ICONS: Record<string, string | any> = {
     LinkedIn,
-
     GitHub
 }
 
@@ -60,7 +68,7 @@ const printInfo = [email, phone].filter(Boolean).join(' | ')
                     }
     
                     {
-                        profiles.map((profile, index) => {
+                        profiles.map((profile:any) => {
                             const {network, url} = profile
                             const Icon = SOCIAL_ICONS[network]
     
@@ -76,6 +84,7 @@ const printInfo = [email, phone].filter(Boolean).join(' | ')
                             )
                         })
                     }
+                    <a href={`/${otherLanguage === 'es' ? '' : otherLanguage}`}>{otherLanguage}</a>
     
                 </footer>
             </div>

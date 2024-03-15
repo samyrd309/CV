@@ -1,16 +1,30 @@
 ---
 import Section from "@/components/Section.astro";
-import { work } from "@cv";
+
+import {getLangFromUrl, useTranslations} from '@/i18n/utils.ts'
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+
+let work = t('work')
+const {title} = Astro.props;
 ---
 
-<Section title="Experiencia laboral">
+<Section title={title}>
   <ul>
     {
       work.map(
-        ({ name, startDate, endDate, position, summary, highlights }) => {
+        ({ name, startDate, endDate, position, summary, highlights }: { 
+          name: string; 
+          startDate: string; 
+          endDate: string | null; 
+          position: string; 
+          summary: string; 
+          highlights: string[] 
+        }) => {
           const startYear = new Date(startDate).getFullYear();
           const endYear =
-            endDate !== null ? new Date(endDate).getFullYear() : "Actualidad";
+            endDate !== null ? new Date(endDate).getFullYear() : t('expirienceTimeNow');
           const years = `${startYear} - ${endYear}`;
 
           return (
