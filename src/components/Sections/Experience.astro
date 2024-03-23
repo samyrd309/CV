@@ -1,48 +1,65 @@
 ---
 import Section from "@/components/Section.astro";
 
-import {getLangFromUrl, useTranslations} from '@/i18n/utils.ts'
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
+import { getLangFromUrl, useTranslations } from "@/i18n/utils.ts";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
-
-let work = t('work')
-const {title} = Astro.props;
+let work = t("work");
+const { title } = Astro.props;
 ---
 
 <Section title={title}>
   <ul>
     {
       work.map(
-        ({ name, startDate, endDate, position, summary, highlights }: { 
-          name: string; 
-          startDate: string; 
-          endDate: string | null; 
-          position: string; 
-          summary: string; 
-          highlights: string[] 
+        ({
+          name,
+          startDate,
+          endDate,
+          position,
+          summary,
+          highlights,
+        }: {
+          name: string;
+          startDate: string;
+          endDate: string | null;
+          position: string;
+          summary: {
+            responsabilities: string[];
+            achievements: string[];
+          };
+          highlights: string[];
         }) => {
           const startYear = new Date(startDate).getFullYear();
           const endYear =
-            endDate !== null ? new Date(endDate).getFullYear() : t('expirienceTimeNow');
+            endDate !== null
+              ? new Date(endDate).getFullYear()
+              : t("expirienceTimeNow");
           const years = `${startYear} - ${endYear}`;
 
           return (
             <li>
               <article>
                 <header>
-                    <div>
-                        <h3>{name}</h3>
-                        <h4>{position}</h4>
-                    </div>
+                    <h3>{position} &bull; {name}</h3>
                     <time>{years}</time>
                 </header>
 
                 <footer>
-                    <p>{summary}</p>
+                  <h4>{t("responsibilities")}</h4>
+                  <ul>
+                    {summary.responsabilities.map((responsability) => (
+                      <li><p>{responsability}</p></li>
+                    ))}
+                  </ul>
+                  <h4>{t("objetivosLogrados")}</h4>
+                  <ul>
+                    {summary.achievements.map((achievement) => (
+                      <li><p>{achievement}</p></li>
+                    ))}
+                  </ul>
                 </footer>
-                
-                
               </article>
             </li>
           );
@@ -52,33 +69,41 @@ const {title} = Astro.props;
   </ul>
 </Section>
 
-
 <style>
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  footer ul li{
+    list-style: square;
+    margin-left: 2%;
+    gap: 5px;
+  }
+  article h3 {
+    font-weight: 600;
+    color: #111;
+  }
 
-    article h3 {
-        font-weight: 500;
-        color: #111;
-    }
+  article h4 {
+    font-weight: 500;
+    color: #222;
+    margin-block: 10px;
+  }
 
-    article h4 {
-        font-weight: 400;
-        color: #222;
-    }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 4px;
-    }
+  header div {
+    display: flex;
+    justify-content: center;
+  }
 
-    time{
-        color: #555;
-        font-size: 0.85rem;
-    }
+  time {
+    color: #555;
+    font-size: 0.85rem;
+  }
 </style>

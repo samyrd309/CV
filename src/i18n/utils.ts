@@ -1,6 +1,6 @@
 import { ui, defaultLang } from './ui';
 
-type UIKeys = "sobreMiTitle"|"experienciaTitle"|"educacionTitle"|"habilidadesTitle"| "proyectosTitle" |"expirienceTimeNow" |"titles"| "basics" | "work" | "volunteer" | "education" | "awards" | "certificates" | "publications" | "skills" | "languages" | "interests" | "references" | "projects";
+type UIKeys = "objetivosLogrados"|"responsibilities" |"sobreMiTitle"|"experienciaTitle"|"educacionTitle"|"habilidadesTitle"| "proyectosTitle" |"expirienceTimeNow" |"titles"| "basics" | "work" | "volunteer" | "education" | "awards" | "certificates" | "publications" | "skills" | "languages" | "interests" | "references" | "projects";
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/');

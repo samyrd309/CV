@@ -1,13 +1,17 @@
 ---
 import Section from "../Section.astro"
 
-import { skills } from "@cv"
+import { getLangFromUrl, useTranslations } from "@/i18n/utils.ts";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+let skills = t("skills");
 const {title} = Astro.props
 ---
 
 <Section title={title}>
     <ul>
-        {skills.map(({name}) => (
+        {skills.map(({name}: {name: string}) => (
             <li>
                 {name}
             </li>

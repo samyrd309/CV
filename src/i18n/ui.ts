@@ -3,10 +3,9 @@ export const languages = {
   es: "Español",
 };
 
-export function getOtherLanguage(currentLanguage: 'en' | 'es'): 'en' | 'es' {
-  return currentLanguage === 'en' ? 'es' : 'en';
+export function getOtherLanguage(currentLanguage: "en" | "es"): "en" | "es" {
+  return currentLanguage === "en" ? "es" : "en";
 }
-
 
 export const defaultLang = "es";
 
@@ -18,16 +17,17 @@ export const ui = {
     habilidadesTitle: "Habilidades",
     proyectosTitle: "Proyectos",
     expirienceTimeNow: "Actualidad",
+    responsibilities: "Responsabilidades",
+    objetivosLogrados: "Objetivos Logrados",
     basics: {
-      name: "Samuel Junior M. Charles Saint-Jean",
-      label:
-        "Ingeniero de software con experiencia en desarrollo web, desarrollo de aplicaciones moviles y desarrollo de aplicaciones de escritorio.",
+      name: "Samuel Junior Charles Saint-Jean",
+      label: "Ingeniero de software - Desarrollador Web - Desarrollador Móvil",
       image: "",
       email: "samuelcharlessj30@gmail.com",
       phone: "+1 829 906 1039",
       url: "",
       summary:
-        "Aproximadamente 1 año de experiencia como Desarrollador Web. Egresado del Instituto Tecnológico de Santo Domingo (INTEC). Actualmente estoy trabajando como desarrollador freelancer en el Banreservas. Busco nuevas oportunidades para seguir creciendo profesionalmente.",
+        "Con casi un año como desarrollador freelancer en Banreservas. Apasionado por la tecnología y la creatividad, estoy siempre en busca de desafíos que me permitan destacar y evolucionar profesionalmente. Graduado del Instituto Tecnológico de Santo Domingo (INTEC).",
       location: {
         address: "",
         postalCode: "",
@@ -51,23 +51,24 @@ export const ui = {
     },
     work: [
       {
-        name: "Metaconxept",
+        name: "Banreservas",
         position: "Desarrollador Externo Junior",
         url: "",
         startDate: "Agosto 2023",
         endDate: null,
-        summary:
-          "Desarrollo de APIs RESTful escalables integrando bases de datos SQL Server y servicios externos para la empresa (Banreservas) sub-contratado por Metaconxept. Mantenimiento, seguimiento y control de los sistemas informaticos de la empresa (Banreservas).",
-        highlights: [""],
-      },
-      {
-        name: "Qudif",
-        position: "Desarrollador Backend Junior",
-        url: "",
-        startDate: "Agosto 2022",
-        endDate: "Julio 2023",
-        summary:
-          "Implementación y personalización de módulos de facturación en el sistema ERP. Análisis y documentación de requerimientos para la adecuación de la logíca de facturación de la empresa. Responsable de identificar requerimientos del usuario y diseñar los servicios de facturación.",
+        summary: {
+          responsabilities: [
+            "Contribuir al desarrollo de APIs RESTful integrando bases de datos SQL Server y servicios externos.",
+            "Realizar tareas de mantenimiento, seguimiento, control y documentación de los sistemas informáticos de Banreservas para garantizar su funcionamiento sin problemas.",
+            "Aprender y adoptar activamente las tecnologías y herramientas definidas por el equipo.",
+            "Participar en el diseño e implementación de nuevas características, bajo la supervisión y dirección del equipo.",
+          ],
+          achievements: [
+            "Contribuí activamente en la automatización del proceso de carga de datos, migrando de Integration Services manual a un Background Worker Service, mejorando significativamente la eficiencia operativa.",
+            "Aprendí y apliqué nuevas tecnologías y herramientas, demostrando capacidad para aprender de manera autónoma y adaptarme a los requerimientos del equipo.",
+            "Participé en la implementación de actualizaciones de parámetros para asegurar el cumplimiento normativo y optimizar las operaciones internas de Banreservas.",
+          ],
+        },
         highlights: [""],
       },
     ],
@@ -134,82 +135,73 @@ export const ui = {
       {
         name: "HTML",
         level: "Master",
-        keywords: ["Desarrollo Web", "Frontend"],
+        keywords: ["Web Development", "Frontend"],
       },
       {
         name: "CSS",
         level: "Master",
-        keywords: ["Desarrollo Web", "Frontend", "Diseño Responsive"],
+        keywords: ["Web Development", "Frontend", "Responsive Design"],
       },
       {
         name: "JavaScript",
-        level: "Intermedio",
-        keywords: ["Desarrollo Web", "Frontend", "Backend", "Fullstack"],
+        level: "Intermediate",
+        keywords: ["Web Development", "Frontend", "Backend", "Fullstack"],
       },
       {
         name: "TypeScript",
-        level: "Básico",
+        level: "Basic",
         keywords: [
-          "Desarrollo Web",
+          "Web Development",
           "Frontend",
           "Backend",
           "JavaScript Superset",
         ],
       },
-      {
-        name: "Node",
-        level: "Básico",
-        keywords: ["Desarrollo Web", "Backend", "JavaScript", "Servidor"],
-      },
+
       {
         name: "Microsoft SQL",
-        level: "Intermedio",
-        keywords: [
-          "Bases de Datos",
-          "SQL",
-          "Almacenamiento de Datos",
-          "Backend",
-        ],
+        level: "Intermediate",
+        keywords: ["Databases", "SQL", "Data Storage", "Backend"],
       },
       {
         name: "Git",
-        level: "Avanzado",
-        keywords: ["Control de Versiones", "Colaboración", "Código Fuente"],
+        level: "Advanced",
+        keywords: ["Version Control", "Collaboration", "Source Code"],
       },
       {
         name: "GitHub",
-        level: "Avanzado",
-        keywords: [
-          "Control de Versiones",
-          "Colaboración",
-          "Código Fuente",
-          "Git",
-        ],
+        level: "Advanced",
+        keywords: ["Version Control", "Collaboration", "Source Code", "Git"],
       },
       {
         name: "React",
-        level: "Básico",
-        keywords: ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"],
+        level: "Basic",
+        keywords: ["Web Development", "Frontend", "JavaScript Library", "UI"],
       },
       {
         name: "React-Native",
-        level: "Básico",
-        keywords: ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"],
+        level: "Basic",
+        keywords: ["Web Development", "Frontend", "JavaScript Library", "UI"],
       },
       {
         name: "Astro",
-        level: "Básico",
-        keywords: ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"],
+        level: "Basic",
+        keywords: ["Web Development", "Frontend", "JavaScript Library", "UI"],
       },
       {
         name: "C#",
-        level: "Intermedio",
-        keywords: ["Desarrollo Web", "Frontend", "Backend"],
+        level: "Intermediate",
+        keywords: ["Web Development", "Frontend", "Backend"],
       },
       {
         name: "ASP.NET",
-        level: "Intermedio",
-        keywords: ["Desarrollo Web", "Backend"],
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "DevOps",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
       },
     ],
     languages: [
@@ -265,10 +257,11 @@ export const ui = {
     habilidadesTitle: "Skills",
     proyectosTitle: "Projects",
     expirienceTimeNow: "Now",
+    responsibilities: "Responsibilities",
+    objetivosLogrados: "Achieved Objectives",
     basics: {
       name: "Samuel Junior M. Charles Saint-Jean",
-      label:
-        "Software Engineer with experience in web development, mobile app development, and desktop application development.",
+      label: "Software Engineer",
       image: "",
       email: "samuelcharlessj30@gmail.com",
       phone: "+1 829 906 1039",
@@ -303,19 +296,19 @@ export const ui = {
         url: "",
         startDate: "August 2023",
         endDate: null,
-        summary:
-          "Development of scalable RESTful APIs integrating SQL Server databases and external services for the company (Banreservas) subcontracted by Metaconxept. Maintenance, monitoring, and control of the company's (Banreservas) information systems.",
-        highlights: [""],
-      },
-      {
-        name: "Qudif",
-        position: "Junior Backend Developer",
-        url: "",
-        startDate: "August 2022",
-        endDate: "July 2023",
-        summary:
-          "Implementation and customization of billing modules in the ERP system. Analysis and documentation of requirements for the adaptation of the company's billing logic. Responsible for identifying user requirements and designing billing services.",
-        highlights: [""],
+        summary: {
+          responsabilities: [
+            "Contribute to the development of RESTful APIs integrating SQL Server databases and external services.",
+            "Perform maintenance, monitoring, control, and documentation tasks of Banreservas' IT systems to ensure smooth operation.",
+            "Actively learn and adopt the technologies and tools defined by the team.",
+            "Participate in the design and implementation of new features under the supervision and direction of the team.",
+          ],
+          achievements: [
+            "Actively contributed to automating the data loading process, migrating from manual Integration Services to a Background Worker Service, significantly improving operational efficiency.",
+            "Learned and applied new technologies and tools, demonstrating the ability to learn autonomously and adapt to team requirements.",
+            "Participated in implementing parameter updates to ensure regulatory compliance and optimize Banreservas' internal operations.",
+          ],
+        },
       },
     ],
     volunteer: [
@@ -403,11 +396,7 @@ export const ui = {
           "JavaScript Superset",
         ],
       },
-      {
-        name: "Node",
-        level: "Basic",
-        keywords: ["Web Development", "Backend", "JavaScript", "Server"],
-      },
+
       {
         name: "Microsoft SQL",
         level: "Intermediate",
@@ -445,6 +434,11 @@ export const ui = {
       },
       {
         name: "ASP.NET",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "DevOps",
         level: "Intermediate",
         keywords: ["Web Development", "Backend"],
       },
