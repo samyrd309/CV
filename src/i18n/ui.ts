@@ -198,7 +198,7 @@ export const ui = {
         keywords: ["Web Development", "Backend"],
       },
       {
-        name: "Metodologia ágile SCRUM",
+        name: "SCRUM",
         level: "Intermediate",
         keywords: ["Web Development", "Backend"],
       },
@@ -452,7 +452,7 @@ export const ui = {
         keywords: ["Web Development", "Backend"],
       },
       {
-        name: "Agile SCRUM methodology",
+        name: "SCRUM",
         level: "Intermediate",
         keywords: ["Web Development", "Backend"],
       },
