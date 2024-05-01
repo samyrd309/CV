@@ -1,0 +1,72 @@
+---
+let { open } = Astro.props;
+---
+<button data-open-modal>{open}</button>
+<dialog data-modal>
+    <button data-close-modal formmethod="dialog">X</button>
+  <form>
+    <slot />
+  </form>
+</dialog>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", (event) => {
+    const openButton = document.querySelector("[data-open-modal]");
+    const closeButton = document.querySelector("[data-close-modal]");
+    const modal = document.querySelector("[data-modal]");
+
+    if (openButton && closeButton && modal) {
+      openButton.addEventListener("click", () => {
+        modal.showModal();
+      });
+
+      closeButton.addEventListener("click", () => {
+        modal.close();
+      });
+    }
+  });
+</script>
+
+<style>
+  dialog {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #a79c9c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  button[data-open-modal] {
+    background-color: #4c7aaf;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 300px;
+  }
+  button[data-open-modal]:hover {
+    background-color: #456aa0;
+    cursor: pointer;
+  }
+  button {
+    background-color: #af4c4c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    float: right;
+  }
+  button:hover {
+    background-color: #a04545;
+    cursor: pointer;
+  }
+  button:active {
+    background-color: #8e3e3e;
+  }
+</style>

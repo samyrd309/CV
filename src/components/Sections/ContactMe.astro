@@ -1,0 +1,13 @@
+---
+import Modal from "../Modal.astro";
+---
+
+<Modal>
+  <label for="name">Nombre:</label><br />
+  <input type="text" id="name" name="name" required /><br />
+  <label for="email">Correo electrónico:</label><br />
+  <input type="email" id="email" name="email" required /><br />
+  <label for="message">Mensaje:</label><br />
+  <textarea id="message" name="message" required></textarea><br />
+  <input type="submit" value="Enviar" />
+</Modal>
