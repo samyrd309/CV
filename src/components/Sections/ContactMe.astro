@@ -1,13 +1,37 @@
 ---
-import Modal from "../Modal.astro";
----
 
-<Modal>
-  <label for="name">Nombre:</label><br />
-  <input type="text" id="name" name="name" required /><br />
-  <label for="email">Correo electrónico:</label><br />
-  <input type="email" id="email" name="email" required /><br />
-  <label for="message">Mensaje:</label><br />
-  <textarea id="message" name="message" required></textarea><br />
-  <input type="submit" value="Enviar" />
-</Modal>
+---
+<h1>Contacto</h1>   
+<label for="name">Nombre:</label><br />
+<input type="text" id="name" name="name" required /><br />
+<label for="email">Correo electrónico:</label><br />
+<input type="email" id="email" name="email" required /><br />
+<label for="message">Mensaje:</label><br />
+<textarea id="message" name="message" required></textarea><br />
+<input type="submit" value="Enviar" />
+
+<style>
+  label {
+    font-weight: bold;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
