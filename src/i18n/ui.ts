@@ -59,14 +59,11 @@ export const ui = {
         summary: {
           responsabilities: [
             "Contribuir al desarrollo de APIs RESTful integrando bases de datos SQL Server y servicios externos.",
-            "Realizar tareas de mantenimiento, seguimiento, control y documentación de los sistemas informáticos de Banreservas para garantizar su funcionamiento sin problemas.",
-            "Aprender y adoptar activamente las tecnologías y herramientas definidas por el equipo.",
-            "Participar en el diseño e implementación de nuevas características, bajo la supervisión y dirección del equipo.",
+            "Realizar tareas de mantenimiento, seguimiento, control y documentación de los sistemas informáticos del Banreservas.",
           ],
           achievements: [
             "Contribuí activamente en la automatización del proceso de carga de datos, migrando de Integration Services manual a un Background Worker Service, mejorando significativamente la eficiencia operativa.",
             "Aprendí y apliqué nuevas tecnologías y herramientas, demostrando capacidad para aprender de manera autónoma y adaptarme a los requerimientos del equipo.",
-            "Participé en la implementación de actualizaciones de parámetros para asegurar el cumplimiento normativo y optimizar las operaciones internas de Banreservas.",
           ],
         },
         highlights: [""],
@@ -314,14 +311,11 @@ export const ui = {
         summary: {
           responsabilities: [
             "Contribute to the development of RESTful APIs integrating SQL Server databases and external services.",
-            "Perform maintenance, monitoring, control, and documentation tasks of Banreservas' IT systems to ensure smooth operation.",
-            "Actively learn and adopt the technologies and tools defined by the team.",
-            "Participate in the design and implementation of new features under the supervision and direction of the team.",
+            "Perform maintenance, monitoring, control, and documentation tasks of Banreservas' IT systems.",
           ],
           achievements: [
             "Actively contributed to automating the data loading process, migrating from manual Integration Services to a Background Worker Service, significantly improving operational efficiency.",
             "Learned and applied new technologies and tools, demonstrating the ability to learn autonomously and adapt to team requirements.",
-            "Participated in implementing parameter updates to ensure regulatory compliance and optimize Banreservas' internal operations.",
           ],
         },
       },
