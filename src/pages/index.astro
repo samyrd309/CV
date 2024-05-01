@@ -20,15 +20,14 @@ const { name, label } = basics;
 
 <Layout title=`Portafolio de ${name} - ${label}`>
   <main>
-    <Modal open="Contacta me">
-      <ContactMe />
-    </Modal>
+    
     <Hero />
     <About title={t("sobreMiTitle")} />
     <Skills title={t("habilidadesTitle")} />
     <Experience title={t("experienciaTitle")} />
     <Projects title={t("proyectosTitle")} />
     <Education title={t("educacionTitle")} />
+    
     <KeyboardManager />
   </main>
 </Layout>

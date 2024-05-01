@@ -1,11 +1,15 @@
 ---
+import ContactMe from "./Sections/ContactMe.astro";
+import Mail from "@/icons/Mail.astro";
+
 let { open } = Astro.props;
 ---
-<button data-open-modal>{open}</button>
+
+<button data-open-modal><Mail /></button>
 <dialog data-modal>
-    <button data-close-modal formmethod="dialog">X</button>
+  <button data-close-modal formmethod="dialog">X</button>
   <form>
-    <slot />
+    <ContactMe />
   </form>
 </dialog>
 
@@ -33,21 +37,24 @@ let { open } = Astro.props;
     padding: 20px;
     border: 1px solid #a79c9c;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Añade esquinas redondeadas */
+    width: 30%; /* Hace que el modal sea más grande */
+    max-width: 900px; /* Establece un ancho máximo para el modal */
+    margin: auto; /* Centra el modal */
   }
   button[data-open-modal] {
-    background-color: #4c7aaf;
-    border: none;
-    color: white;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    width: 300px;
+    color: #777;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background-color: #fff;
   }
   button[data-open-modal]:hover {
-    background-color: #456aa0;
+    background: #eee;
     cursor: pointer;
   }
   button {
