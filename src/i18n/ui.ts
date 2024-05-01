@@ -85,17 +85,7 @@ export const ui = {
     ],
     education: [
       {
-        institution: "CodeCademy",
-        url: "https://www.intec.edu.do",
-        area: "Certificado de Desarrollador Front-End",
-        studyType: "Bachelor",
-        startDate: "2023-12-01",
-        endDate: null,
-        score: "4.0",
-        courses: ["DB1101 - Basic SQL"],
-      },
-      {
-        institution: "INTEC",
+        institution: "Instituto Tecnológico de Santo Domingo (INTEC)",
         url: "https://www.intec.edu.do",
         area: "Ingeniero de Software",
         studyType: "Bachelor",
@@ -103,7 +93,7 @@ export const ui = {
         endDate: "2024-01-01",
         score: "4.0",
         courses: ["DB1101 - Basic SQL"],
-      },
+      }
     ],
     awards: [
       {
@@ -349,17 +339,7 @@ export const ui = {
     ],
     education: [
       {
-        institution: "CodeCademy",
-        url: "https://www.intec.edu.do",
-        area: "Front-End Developer Certificate",
-        studyType: "Bachelor",
-        startDate: "2023-12-01",
-        endDate: null,
-        score: "4.0",
-        courses: ["DB1101 - Basic SQL"],
-      },
-      {
-        institution: "INTEC",
+        institution: "Instituto Tecnológico de Santo Domingo (INTEC)",
         url: "https://www.intec.edu.do",
         area: "Software Engineer",
         studyType: "Bachelor",
