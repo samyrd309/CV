@@ -157,7 +157,6 @@ export const ui = {
           "JavaScript Superset",
         ],
       },
-
       {
         name: "Microsoft SQL",
         level: "Intermediate",
@@ -203,6 +202,32 @@ export const ui = {
         level: "Intermediate",
         keywords: ["Web Development", "Backend"],
       },
+      {
+        name: "Figma",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "Metodologia ágile SCRUM",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "Bootstrap",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "Expo",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "Python",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+
     ],
     languages: [
       {
@@ -396,7 +421,6 @@ export const ui = {
           "JavaScript Superset",
         ],
       },
-
       {
         name: "Microsoft SQL",
         level: "Intermediate",
@@ -442,6 +466,32 @@ export const ui = {
         level: "Intermediate",
         keywords: ["Web Development", "Backend"],
       },
+      {
+        name: "Figma",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "Agile SCRUM methodology",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "Bootstrap",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "Expo",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "Python",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+
     ],
     languages: [
       {

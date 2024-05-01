@@ -8,31 +8,30 @@ import Education from "@/components/Sections/Education.astro";
 import Projects from "@/components/Sections/Projects.astro";
 import Skills from "@/components/Sections/Skills.astro";
 import KeyboardManager from "@/components/KeyboardManager.astro";
-import {getLangFromUrl, useTranslations} from '@/i18n/utils.ts'
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
+import { getLangFromUrl, useTranslations } from "@/i18n/utils.ts";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
-let basics = t('basics')
+let basics = t("basics");
 
-const {name, label} = basics
+const { name, label } = basics;
 ---
 
 <Layout title=`Portafolio de ${name} - ${label}`>
   <main>
     <Hero />
     <About title={t("sobreMiTitle")} />
-    <Skills title={t("habilidadesTitle")}/>
+    <Skills title={t("habilidadesTitle")} />
     <Experience title={t("experienciaTitle")} />
     <Projects title={t("proyectosTitle")} />
-    <Education title={t("educacionTitle")}/>
+    <Education title={t("educacionTitle")} />
     <KeyboardManager />
   </main>
 </Layout>
 
 <style>
-
-  main{
+  main {
     padding: 3rem;
-	  margin: auto;
+    margin: auto;
   }
 </style>

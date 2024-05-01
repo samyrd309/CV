@@ -1,75 +1,103 @@
 ---
-import Section from "../Section.astro"
+import Section from "../Section.astro";
 
-import {getLangFromUrl, useTranslations} from '@/i18n/utils.ts'
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
+import { getLangFromUrl, useTranslations } from "@/i18n/utils.ts";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
-let education = t("education")
-const {title} = Astro.props
+let education = t("education");
+const { title } = Astro.props;
 ---
 
 <Section title={title}>
-    <ul>
-        {
-            education.map(({institution, startDate, endDate, area}: {institution: string, startDate: string, endDate: string, area: string}) =>{
-                const startYear = new Date(startDate).getFullYear();
-                const endYear = endDate!=null ? new Date(endDate).getFullYear() : t('expirienceTimeNow');
-                const years = `${startYear} - ${endYear}`;
+  <ul>
+    {
+      education.map(
+        ({
+          institution,
+          startDate,
+          endDate,
+          area,
+        }: {
+          institution: string;
+          startDate: string;
+          endDate: string;
+          area: string;
+        }) => {
+          const startYear = new Date(startDate).getFullYear();
+          const endYear =
+            endDate != null
+              ? new Date(endDate).getFullYear()
+              : t("expirienceTimeNow");
+          const years = `${startYear} - ${endYear}`;
 
-                return(
-                    <li>
-                        <article>
-                            <header>
-                                <div>
-                                    <h3>{institution}</h3>
-                                </div>
-                                <time>{years}</time>
-                            </header>
-                            <footer>
-                                <p>{area}</p>
-                            </footer>
-                        </article>
-                    </li>
-                )
-            } )
+          return (
+            <li>
+              <article>
+                <header>
+                  <div>
+                    <h3>{institution}</h3>
+                  </div>
+                  <time>{years}</time>
+                </header>
+                <footer>
+                  <p>{area}</p>
+                </footer>
+              </article>
+            </li>
+          );
         }
-    </ul>
+      )
+    }
+  </ul>
 </Section>
 
-
 <style>
-   ul {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
 
-    article h3 {
-        font-weight: 500;
-        color: #111;
-    }
+  article {
+    border-radius: 8px;
+    border: 1px solid #f2f2f2;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    height: 100%;
+  }
 
-    article h4 {
-        font-weight: 400;
-        color: #222;
-    }
+  article header {
+    flex: 1;
+  }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 4px;
-    }
+  article h3 {
+    margin-bottom: 4px;
+  }
 
-    time{
-        color: #555;
-        font-size: 0.85rem;
+  article a {
+    color: #111;
+  }
+  article a:hover {
+    text-decoration: underline;
+  }
+
+  article p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin-bottom: 4px;
+  }
+
+  time {
+    color: #555;
+    font-size: 0.85rem;
+  }
+
+  @media (width <= 700px) {
+    time {
+      text-align: right;
     }
-  
-    @media (width <= 700px) {
-      time {
-        text-align: right;
-      }
-    }
-  </style>
+  }
+</style>
