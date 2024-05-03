@@ -295,7 +295,7 @@ export const ui = {
       phone: "+1 829 906 1039",
       url: "",
       summary:
-        "+10 months of experience as a Web Developer. Since 2017 within the world of programming. Currently working as a freelancer developer at Banreservas. Seeking new opportunities to continue growing professionally.",
+        "+10 months as a freelance developer at Banreservas. Since 2017 within the world of programming. Passionate about technology and creativity, I am always looking for challenges that allow me to stand out and evolve professionally.",
       location: {
         address: "",
         postalCode: "",
