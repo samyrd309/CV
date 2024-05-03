@@ -222,6 +222,11 @@ export const ui = {
         level: "Intermediate",
         keywords: ["Web Development", "Backend"],
       },
+      {
+        name: "Razor",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
 
     ],
     languages: [
@@ -478,6 +483,11 @@ export const ui = {
       },
       {
         name: "Python",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "Razor",
         level: "Intermediate",
         keywords: ["Web Development", "Backend"],
       },
