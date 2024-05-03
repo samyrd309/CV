@@ -37,8 +37,6 @@
       </body>
       </html>
     `;
-
-
     try {
       const res = await fetch("/api/sendEmail.json", {
         method: "POST",
@@ -56,6 +54,10 @@
 
       const data = await res.json();
       console.log(data);
+
+      if(res.ok){
+        if(form) form.reset();
+      }
     } catch (error) {
       console.error(error);
     }
