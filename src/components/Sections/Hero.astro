@@ -7,6 +7,8 @@ import WorldMap from "@/icons/WorldMap.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils.ts";
 import { getOtherLanguage } from "@/i18n/ui.ts";
 import Modal from "../Modal.astro";
+
+
 let lang = getLangFromUrl(Astro.url);
 if (!lang) {
   lang = "es"; // asume español si el idioma actual no está definido

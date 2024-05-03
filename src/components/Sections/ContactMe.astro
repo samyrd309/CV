@@ -1,15 +1,31 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils.ts";
+import { getOtherLanguage } from "@/i18n/ui.ts";
 
-<h2>Contacto</h2>
+let lang = getLangFromUrl(Astro.url);
+if (!lang) {
+  lang = "es"; // asume español si el idioma actual no está definido
+}
+const otherLanguage = getOtherLanguage(lang);
+const t = useTranslations(lang);
+let modalSection = t("modalSection");
+
+const { title, name, email, message, subject, send  } = modalSection;
+
+---
+
+
+<h2>{title}</h2>
 <form id="contactForm">
-  <label for="name">Nombre:</label><br />
+  <label for="name">{name}:</label><br />
   <input type="text" id="name" name="name" required /><br />
-  <label for="email">Correo electrónico:</label><br />
+  <label for="email">{email}:</label><br />
   <input type="email" id="email" name="email" required /><br />
-  <label for="subject">Asunto:</label><br />
+  <label for="subject">{subject}:</label><br />
   <input type="text" id="subject" name="subject" required /><br />
-  <label for="message">Mensaje:</label><br />
+  <label for="message">{message}:</label><br />
   <textarea id="message" name="message" required></textarea><br />
-  <button type="button" id="submitButton">Send Email</button>
+  <button type="button" id="submitButton">{send}</button>
 </form>
 
 <script>
