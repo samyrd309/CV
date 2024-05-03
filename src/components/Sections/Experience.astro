@@ -18,8 +18,7 @@ const { title } = Astro.props;
           startDate,
           endDate,
           position,
-          summary,
-          highlights,
+          summary
         }: {
           name: string;
           startDate: string;
@@ -29,7 +28,7 @@ const { title } = Astro.props;
             responsabilities: string[];
             achievements: string[];
           };
-          highlights: string[];
+          
         }) => {
           const startYear = new Date(startDate).getFullYear();
           const endYear =

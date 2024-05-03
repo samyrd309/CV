@@ -1,6 +1,5 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import ContactMe from "@/components/Sections/ContactMe.astro";
 import Hero from "@/components/Sections/Hero.astro";
 import About from "@/components/Sections/About.astro";
 import Experience from "@/components/Sections/Experience.astro";
@@ -9,7 +8,6 @@ import Projects from "@/components/Sections/Projects.astro";
 import Skills from "@/components/Sections/Skills.astro";
 import KeyboardManager from "@/components/KeyboardManager.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils.ts";
-import Modal from "@/components/Modal.astro";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
