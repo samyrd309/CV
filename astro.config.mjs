@@ -4,7 +4,7 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "server",
+  output: "static",
   i18n: {
     defaultLocale: "es",
     locales: ["es", "en"],
