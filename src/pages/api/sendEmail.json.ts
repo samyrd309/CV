@@ -47,7 +47,7 @@ export const POST:APIRoute = async({request}) => {
             }),
             {
                 status: 500,
-                statusText: "Internal Sever Error. Please try again later.",
+                statusText: `Internal Sever Error. Please try again later. ${send.error}` ,
             }
         );
     } 
