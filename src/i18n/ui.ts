@@ -35,7 +35,7 @@ export const ui = {
       phone: "+1 829 906 1039",
       url: "",
       summary:
-        "Con casi un año como desarrollador freelancer en Banreservas. Apasionado por la tecnología y la creatividad, estoy siempre en busca de desafíos que me permitan destacar y evolucionar profesionalmente. Graduado del Instituto Tecnológico de Santo Domingo (INTEC).",
+        "+10 meses como desarrollador freelancer en Banreservas. Desde el 2017 dentro del mundo de la programación. Apasionado por la tecnología y la creatividad, estoy siempre en busca de desafíos que me permitan destacar y evolucionar profesionalmente.",
       location: {
         address: "",
         postalCode: "",
@@ -295,7 +295,7 @@ export const ui = {
       phone: "+1 829 906 1039",
       url: "",
       summary:
-        "Approximately 1 year of experience as a Web Developer. Graduated from the Instituto Tecnológico de Santo Domingo (INTEC). Currently working as a freelancer developer at Banreservas. Seeking new opportunities to continue growing professionally.",
+        "+10 months of experience as a Web Developer. Since 2017 within the world of programming. Currently working as a freelancer developer at Banreservas. Seeking new opportunities to continue growing professionally.",
       location: {
         address: "",
         postalCode: "",
