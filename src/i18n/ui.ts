@@ -20,7 +20,7 @@ export const ui = {
     responsibilities: "Responsabilidades",
     objetivosLogrados: "Objetivos Logrados",
     modalSection: {
-      title: "Contactame",
+      title: "Contactar",
       name: "Nombre",
       email: "Correo Electrónico",
       message: "Mensaje",
