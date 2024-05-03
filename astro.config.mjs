@@ -1,10 +1,11 @@
 import { defineConfig } from 'astro/config';
-
 import node from "@astrojs/node";
+
+import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "static",
+  output: "server",
   i18n: {
     defaultLocale: "es",
     locales: ["es", "en"],
@@ -12,7 +13,5 @@ export default defineConfig({
       prefixDefaultLocale: false
     }
   },
-  adapter: node({
-    mode: "standalone"
-  })
+  adapter: netlify()
 });
