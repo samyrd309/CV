@@ -1,169 +1,155 @@
 ---
-
-import Section from '@/components/Section.astro'
-import Mail from '@/icons/Mail.astro'
-import Phone from '@/icons/Phone.astro'
-import LinkedIn from '@/icons/LinkedIn.astro'
-import GitHub from '@/icons/GitHub.astro'
-import WorldMap from '@/icons/WorldMap.astro'
-import {getLangFromUrl, useTranslations} from '@/i18n/utils.ts'
-import {getOtherLanguage, languages} from '@/i18n/ui.ts'
-let lang = getLangFromUrl(Astro.url)
+import Section from "@/components/Section.astro";
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import GitHub from "@/icons/GitHub.astro";
+import WorldMap from "@/icons/WorldMap.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils.ts";
+import { getOtherLanguage, languages } from "@/i18n/ui.ts";
+import Modal from "../Modal.astro";
+let lang = getLangFromUrl(Astro.url);
 if (!lang) {
-    lang = 'es'; // asume español si el idioma actual no está definido
+  lang = "es"; // asume español si el idioma actual no está definido
 }
 const otherLanguage = getOtherLanguage(lang);
-const t = useTranslations(lang)
-let basics = t('basics')
+const t = useTranslations(lang);
+let basics = t("basics");
 
-const {name, label, image, location, profiles, phone, email} = basics
-const {city, region} = location
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, region } = location;
 
 const SOCIAL_ICONS: Record<string, string | any> = {
-    LinkedIn,
-    GitHub
-}
+  LinkedIn,
+  GitHub,
+};
 
-const printInfo = [email, phone].filter(Boolean).join(' | ')
+const printInfo = [email, phone].filter(Boolean).join(" | ");
 ---
 
 <Section>
-    <div class="container">
-        <div class="info">
-            <h1>{name}</h1>
-            <h2>{label}</h2>
-            <div>
-                <span>
-                    <WorldMap />
-                    {city}, {region}
-                </span>
-                <footer class="print">
-                    {printInfo}
-                </footer>
-                <footer class="no-print">
-                    {
-                        email && (
-                            <a 
-                                href={`mailto:${email}`}
-                                title={`Enviar un correo electrónico a ${name} al correo ${email}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Mail />
-                            </a>
-                        )
-                    }
-    
-                    {
-                        phone && (
-                            <a 
-                                href={`tel:${phone}`}
-                                title={`Llamar a ${name} al número ${phone}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Phone />
-                            </a>
-                        )
-                    }
-    
-                    {
-                        profiles.map((profile:any) => {
-                            const {network, url} = profile
-                            const Icon = SOCIAL_ICONS[network]
-    
-                            return (
-                                <a 
-                                    href={url}
-                                    title={`Visitar el perfil de ${name} en ${network}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <Icon />
-                                </a>
-                            )
-                        })
-                    }
-                    <a href={`/${otherLanguage === 'es' ? '' : otherLanguage}`}>{otherLanguage}</a>
-    
-                </footer>
-            </div>
-        </div>
+  <div class="container">
+    <div class="info">
+      <h1>{name}</h1>
+      <h2>{label}</h2>
+      <div>
+        <span>
+          <WorldMap />
+          {city}, {region}
+        </span>
+        <footer class="print">
+          {printInfo}
+        </footer>
+        <footer class="no-print">
+          {email && <Modal open="Contacta me" />}
+
+          {
+            phone && (
+              <a
+                href={`tel:${phone}`}
+                title={`Llamar a ${name} al número ${phone}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Phone />
+              </a>
+            )
+          }
+
+          {
+            profiles.map((profile: any) => {
+              const { network, url } = profile;
+              const Icon = SOCIAL_ICONS[network];
+
+              return (
+                <a
+                  href={url}
+                  title={`Visitar el perfil de ${name} en ${network}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon />
+                </a>
+              );
+            })
+          }
+          <a href={`/${otherLanguage === "es" ? "" : otherLanguage}`}
+            >{otherLanguage}</a
+          >
+        </footer>
+      </div>
     </div>
+  </div>
 </Section>
 
 <style>
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-        
-    }  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
 
-    .info {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        width: 100%;
-    }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
 
-    .info div {
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0.5rem;
-    }
+  .info div {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
-    .print{
-        font-size: .7rem;
-    }
+  .print {
+    font-size: 0.7rem;
+  }
 
-    h1{
-        font-size: 2rem;
-        margin: 0;
-    }
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
 
-    h2{
-        color: #444;
-        font-weight: 500;
-        font-size: 1.2rem;
-        text-wrap:pretty;
-    }
+  h2 {
+    color: #444;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-wrap: pretty;
+  }
 
-    span{
-        color: #666;
-        display: flex;
-        align-items: center;
-        gap:0.25rem;
-        font-size: 0.9rem;
-        letter-spacing: -0.05rem;
-    }
+  span {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+    letter-spacing: -0.05rem;
+  }
 
-    footer{
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        
-    }
+  footer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
 
-    footer a {
-        color: #777;
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 32px;
-        width: 32px;
-        border: 1px solid #eee;
-        border-radius: 6px;
-        transition: all 0.3s ease;
-    }
+  footer a {
+    color: #777;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
 
-    footer a:hover{
-        background:#eee;
-    }
-
-
+  footer a:hover {
+    background: #eee;
+  }
 </style>

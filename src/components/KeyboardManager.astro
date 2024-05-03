@@ -4,6 +4,7 @@ import GitHub from '@/icons/GitHub.astro';
 import LinkedIn from '@/icons/LinkedIn.astro';
 
 import { type SocialIcon } from "@/types"
+import Modal from './Modal.astro';
 
 const {profiles} = basics
 
@@ -49,7 +50,6 @@ const profilesInfo = profiles.map(({network, url}) => {
 
 })
 ---
-
 <footer class="no-print">
     Pulsa <kbd>Ctrl</kbd> + <kbd>K</kbd> para abrir la paleta de comandos.
 </footer>
