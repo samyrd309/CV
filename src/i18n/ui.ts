@@ -227,6 +227,16 @@ export const ui = {
         level: "Intermediate",
         keywords: ["Web Development", "Backend"],
       },
+      {
+        name: "PHP",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "DreamViewer",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
 
     ],
     languages: [
@@ -331,12 +341,12 @@ export const ui = {
         endDate: null,
         summary: {
           responsabilities: [
-            "Contribute to the development of RESTful APIs integrating SQL Server databases and external services.",
-            "Perform maintenance, monitoring, control, and documentation tasks of Banreservas' IT systems.",
+            "Contributed to developing 4+ RESTful APIs integrating SQL Server databases and external services.",
+            "Conducted maintenance, monitoring, control, and documentation tasks for Banreservas' IT systems, improving operational efficiency.",
           ],
           achievements: [
-            "Actively contributed to automating the data loading process, migrating from manual Integration Services to a Background Worker Service, significantly improving operational efficiency.",
-            "Learned and applied new technologies and tools, demonstrating the ability to learn autonomously and adapt to team requirements.",
+            "Successfully automated the data loading process, enhancing operational efficiency by 15% through migrating to a Background Worker Service. ",
+            "Demonstrated a strong ability to learn autonomously and adapt to team requirements by mastering 4 new technologies and tools.",
           ],
         },
       },
@@ -488,6 +498,16 @@ export const ui = {
       },
       {
         name: "Razor",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "PHP",
+        level: "Intermediate",
+        keywords: ["Web Development", "Backend"],
+      },
+      {
+        name: "DreamViewer",
         level: "Intermediate",
         keywords: ["Web Development", "Backend"],
       },
