@@ -228,11 +228,6 @@ export const ui = {
         keywords: ["Web Development", "Backend"],
       },
       {
-        name: "PHP",
-        level: "Intermediate",
-        keywords: ["Web Development", "Backend"],
-      },
-      {
         name: "DreamViewer",
         level: "Intermediate",
         keywords: ["Web Development", "Backend"],
@@ -498,11 +493,6 @@ export const ui = {
       },
       {
         name: "Razor",
-        level: "Intermediate",
-        keywords: ["Web Development", "Backend"],
-      },
-      {
-        name: "PHP",
         level: "Intermediate",
         keywords: ["Web Development", "Backend"],
       },
