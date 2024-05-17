@@ -298,12 +298,12 @@ export const ui = {
     ],
   },
   en: {
-    aboutMeTitle: "About Me",
-    workExperienceTitle: "Work Experience",
-    educationTitle: "Education",
-    skillsTitle: "Skills",
-    projectsTitle: "Projects",
-    experienceTimeNow: "Present",
+    sobreMiTitle: "About Me",
+    experienciaTitle: "Work Experience",
+    educacionTitle: "Education",
+    habilidadesTitle: "Skills",
+    proyectosTitle: "Projects",
+    expirienceTimeNow: "Present",
     responsibilities: "Responsibilities",
     achievedObjectives: "Achieved Objectives",
     modalSection: {
