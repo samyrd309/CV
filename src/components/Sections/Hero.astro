@@ -29,7 +29,7 @@ const printInfo = [email, phone].filter(Boolean).join(" | ");
 ---
 
 <Section>
-  <div class="container">
+  <div class="container ">
     <div class="info">
       <h1>{name}</h1>
       <h2>{label}</h2>
@@ -79,15 +79,25 @@ const printInfo = [email, phone].filter(Boolean).join(" | ");
         </footer>
     </div>
     <figure>
-      <img class="w-50 h-20 bg-black mx-auto rounded" src="/samuel.jpg" alt="Default avatar">
+      <img src="/samuelgraybg.png" alt="Default avatar">
     </figure>
   </div>
 </Section>
 
 <style>
+  figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    min-width: 150px;
+    max-width: 160px;
+    height: auto;
+  }
   img{
-    width: 200px;
-    height: 130px;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 5%;
   }
   .container {
     display: flex;
@@ -95,6 +105,20 @@ const printInfo = [email, phone].filter(Boolean).join(" | ");
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+    .figure{
+    }
+  }
+
+  @media print {
+    .container {
+      flex-direction: row;
+    }
   }
 
   .info {
