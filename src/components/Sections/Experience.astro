@@ -45,8 +45,8 @@ const { title } = Astro.props;
                 </h3>
                 <ul class=" text-base font-normal text-gray-500 dark:text-gray-400">
                   {summary.map((responsability) => (
-                    <li >
-                      <p>{responsability}</p>
+                    <li>
+                      <p> {responsability}</p>
                     </li>
                   ))}
                 </ul>
@@ -64,10 +64,11 @@ const { title } = Astro.props;
     display: flex;
     flex-direction: column;
   }
-  footer ol li {
+  ul li {
     list-style: square;
     margin-left: 2%;
     gap: 4px;
+    color: #111;
   }
   article h3 {
     font-weight: 600;
