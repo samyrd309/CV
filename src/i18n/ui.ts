@@ -11,7 +11,7 @@ export const defaultLang = "es";
 
 export const ui = {
   es: {
-    sobreMiTitle: "Sobre Mi",
+    sobreMiTitle: "Sobre mí",
     experienciaTitle: "Experiencia laboral",
     educacionTitle: "Educación",
     habilidadesTitle: "Habilidades",
@@ -24,7 +24,7 @@ export const ui = {
       name: "Nombre",
       email: "Correo Electrónico",
       message: "Mensaje",
-      subject : "Asunto",
+      subject: "Asunto",
       send: "Enviar",
     },
     basics: {
@@ -35,7 +35,7 @@ export const ui = {
       phone: "+1 829 906 1039",
       url: "",
       summary:
-        "+10 meses como desarrollador freelancer en Banreservas. Desde el 2017 dentro del mundo de la programación. Apasionado por la tecnología y la creatividad, estoy siempre en busca de desafíos que me permitan destacar y evolucionar profesionalmente.",
+        "Soy un ingeniero de software especializado en desarrollo web y móvil, con sólidos conocimientos adquiridos a través de proyectos académicos y prácticas freelance. Me apasiona crear soluciones tecnológicas innovadoras y soy proactivo, responsable y colaborativo en equipos de trabajo. Constantemente me actualizo con cursos y certificaciones para seguir creciendo profesionalmente. Busco integrarme a un equipo donde pueda aplicar mis habilidades y seguir aprendiendo y creciendo como desarrollador.",
       location: {
         address: "",
         postalCode: "",
@@ -59,21 +59,37 @@ export const ui = {
     },
     work: [
       {
-        name: "Banreservas",
+        name: "Metaconxept | Banreservas",
         position: "Desarrollador Externo Junior",
         url: "",
         startDate: "Agosto 2023",
-        endDate: null,
-        summary: {
-          responsabilities: [
-            "Contribuir al desarrollo de APIs RESTful integrando bases de datos SQL Server y servicios externos.",
-            "Realizar tareas de mantenimiento, seguimiento, control y documentación de los sistemas informáticos del Banreservas.",
-          ],
-          achievements: [
-            "Contribuí activamente en la automatización del proceso de carga de datos, migrando de Integration Services manual a un Background Worker Service, mejorando significativamente la eficiencia operativa.",
-            "Aprendí y apliqué nuevas tecnologías y herramientas, demostrando capacidad para aprender de manera autónoma y adaptarme a los requerimientos del equipo.",
-          ],
-        },
+        endDate: "Actualidad",
+        summary: [
+          "Desarrollo de APIs RESTful escalables, integración de bases de datos SQL Server y servicios externos.",
+          "Automatización de procesos de carga de datos con C# y experiencia en SSIS (Integration Services).",
+        ],
+        highlights: [""],
+      },
+      {
+        name: "Quantum Digital Innovation Factory",
+        position: "Desarrollador Web Front-End",
+        url: "",
+        startDate: "Junio 2023",
+        endDate: "Julio 2023",
+        summary: [
+          "Desarrollo de módulos de facturación y gestión de bases de datos SQL Server para ERP haciendo uso de tecnologias C# y React.",
+        ],
+        highlights: [""],
+      },
+      {
+        name: "Intecnología",
+        position: "Desarrollador Móvil",
+        url: "",
+        startDate: "Octubre 2022",
+        endDate: "Noviembre 2022",
+        summary: [
+          "Desarrollo de aplicación para celular que escanea códigos QR de los puestos de exibición haciendo uso de React-Native.",
+        ],
         highlights: [""],
       },
     ],
@@ -90,15 +106,25 @@ export const ui = {
     ],
     education: [
       {
+        institution: "Codecademy",
+        url: "#",
+        area: "Cerrificado en desarrollo Front-End",
+        studyType: "Bachelor",
+        startDate: "2021-01-01",
+        endDate: null,
+        score: "3.86",
+        courses: ["DB1101 - Basic SQL"],
+      },
+      {
         institution: "Instituto Tecnológico de Santo Domingo (INTEC)",
-        url: "https://www.intec.edu.do",
-        area: "Ingeniero de Software",
+        url: "https://portal.etitulo.com/visor.aspx?o=p&id=nLqGk",
+        area: "Grado en ingeniería de software",
         studyType: "Bachelor",
         startDate: "2021-01-01",
         endDate: "2024-01-01",
-        score: "4.0",
+        score: "3.86",
         courses: ["DB1101 - Basic SQL"],
-      }
+      },
     ],
     awards: [
       {
@@ -232,7 +258,6 @@ export const ui = {
         level: "Intermediate",
         keywords: ["Web Development", "Backend"],
       },
-
     ],
     languages: [
       {
@@ -270,42 +295,34 @@ export const ui = {
         ],
         url: "#",
       },
-      {
-        name: "INTECNOLGIA",
-        isActive: false,
-        description:
-          "Aplicación de celular que escanea códigos QR de los puestos de exibición y se brinda un premio al conseguir todos los códigos.",
-        highlights: ["Microsoft SQL Server", "ASP.NET Web API", "React-Native"],
-        url: "#",
-      },
     ],
   },
   en: {
-    sobreMiTitle: "About Me",
-    experienciaTitle: "Work Experience",
-    educacionTitle: "Education",
-    habilidadesTitle: "Skills",
-    proyectosTitle: "Projects",
-    expirienceTimeNow: "Now",
+    aboutMeTitle: "About Me",
+    workExperienceTitle: "Work Experience",
+    educationTitle: "Education",
+    skillsTitle: "Skills",
+    projectsTitle: "Projects",
+    experienceTimeNow: "Present",
     responsibilities: "Responsibilities",
-    objetivosLogrados: "Achieved Objectives",
+    achievedObjectives: "Achieved Objectives",
     modalSection: {
       title: "Contact",
       name: "Name",
       email: "Email",
       message: "Message",
-      subject : "Subject",
+      subject: "Subject",
       send: "Send",
     },
     basics: {
-      name: "Samuel Junior M. Charles Saint-Jean",
+      name: "Samuel Junior Charles Saint-Jean",
       label: "Software Engineer | Web Developer | Mobile Developer",
       image: "",
       email: "samuelcharlessj30@gmail.com",
       phone: "+1 829 906 1039",
       url: "",
       summary:
-        "+10 months as a freelance developer at Banreservas. Since 2017 within the world of programming. Passionate about technology and creativity, I am always looking for challenges that allow me to stand out and evolve professionally.",
+        "I am a software engineer specialized in web and mobile development, with solid knowledge gained through academic projects and freelance work. I am passionate about creating innovative technological solutions and am proactive, responsible, and collaborative in team environments. I constantly update my skills through courses and certifications to continue growing professionally. I am looking to join a team where I can apply my skills and continue learning and growing as a developer.",
       location: {
         address: "",
         postalCode: "",
@@ -319,7 +336,6 @@ export const ui = {
           username: "",
           url: "https://www.linkedin.com/in/samuel-junior-matheo-charles-saint-jean-7398061b6/",
         },
-
         {
           network: "GitHub",
           username: "samyrd309",
@@ -329,21 +345,38 @@ export const ui = {
     },
     work: [
       {
-        name: "Metaconxept",
+        name: "Metaconxept | Banreservas",
         position: "Junior External Developer",
         url: "",
         startDate: "August 2023",
-        endDate: null,
-        summary: {
-          responsabilities: [
-            "Contributed to developing 4+ RESTful APIs integrating SQL Server databases and external services.",
-            "Conducted maintenance, monitoring, control, and documentation tasks for Banreservas' IT systems, improving operational efficiency.",
-          ],
-          achievements: [
-            "Successfully automated the data loading process, enhancing operational efficiency by 15% through migrating to a Background Worker Service. ",
-            "Demonstrated a strong ability to learn autonomously and adapt to team requirements by mastering 4 new technologies and tools.",
-          ],
-        },
+        endDate: "Present",
+        summary: [
+          "Development of scalable RESTful APIs, integration of SQL Server databases, and external services.",
+          "Automation of data loading processes with C# and experience with SSIS (Integration Services).",
+        ],
+        highlights: [""],
+      },
+      {
+        name: "Quantum Digital Innovation Factory",
+        position: "Front-End Web Developer",
+        url: "",
+        startDate: "June 2023",
+        endDate: "July 2023",
+        summary: [
+          "Development of billing modules and SQL Server database management for ERP using C# and React technologies.",
+        ],
+        highlights: [""],
+      },
+      {
+        name: "Intecnología",
+        position: "Mobile Developer",
+        url: "",
+        startDate: "October 2022",
+        endDate: "November 2022",
+        summary: [
+          "Development of a mobile application that scans QR codes of exhibition booths using React-Native.",
+        ],
+        highlights: [""],
       },
     ],
     volunteer: [
@@ -359,13 +392,23 @@ export const ui = {
     ],
     education: [
       {
+        institution: "Codecademy",
+        url: "#",
+        area: "Front-End Development Certificate",
+        studyType: "Bachelor",
+        startDate: "2021-01-01",
+        endDate: null,
+        score: "3.86",
+        courses: ["DB1101 - Basic SQL"],
+      },
+      {
         institution: "Instituto Tecnológico de Santo Domingo (INTEC)",
-        url: "https://www.intec.edu.do",
-        area: "Software Engineer",
+        url: "https://portal.etitulo.com/visor.aspx?o=p&id=nLqGk",
+        area: "Bachelor's Degree in Software Engineering",
         studyType: "Bachelor",
         startDate: "2021-01-01",
         endDate: "2024-01-01",
-        score: "4.0",
+        score: "3.86",
         courses: ["DB1101 - Basic SQL"],
       },
     ],
@@ -501,7 +544,6 @@ export const ui = {
         level: "Intermediate",
         keywords: ["Web Development", "Backend"],
       },
-
     ],
     languages: [
       {
@@ -537,14 +579,6 @@ export const ui = {
           "Microsoft SQL Server",
           "SignalR",
         ],
-        url: "#",
-      },
-      {
-        name: "INTECNOLGIA",
-        isActive: false,
-        description:
-          "Mobile application that scans QR codes from exhibition booths and rewards are provided upon obtaining all codes.",
-        highlights: ["Microsoft SQL Server", "ASP.NET Web API", "React-Native"],
         url: "#",
       },
     ],
