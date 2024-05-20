@@ -425,7 +425,7 @@ export const ui = {
       {
         institution: "Colegio Pre-Universitario Luis Alfredo Duvergé Mejía",
         url: "",
-        area: "Bachiller técnico en informática",
+        area: "Technical bachelor in computer science",
         studyType: "Bachelor",
         startDate: "2018-01-01",
         endDate: "2021-01-01",
