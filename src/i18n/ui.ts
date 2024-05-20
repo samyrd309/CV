@@ -404,7 +404,7 @@ export const ui = {
     education: [
       {
         institution: "Codecademy",
-        url: "#",
+        url: "https://www.codecademy.com/profiles/scharles30",
         area: "Front-End Development Certificate",
         studyType: "Bachelor",
         startDate: "2021-01-01",
