@@ -75,7 +75,7 @@ export const ui = {
         position: "Desarrollador Web Front-End",
         url: "",
         startDate: "Junio 2023",
-        endDate: "Julio 2023",
+        endDate: "Septiembre 2023",
         summary: [
           "Desarrollo de módulos de facturación y gestión de bases de datos SQL Server para ERP haciendo uso de tecnologias C# y React.",
         ],
@@ -372,7 +372,7 @@ export const ui = {
         position: "Front-End Web Developer",
         url: "",
         startDate: "June 2023",
-        endDate: "July 2023",
+        endDate: "September 2023",
         summary: [
           "Development of billing modules and SQL Server database management for ERP using C# and React technologies.",
         ],
