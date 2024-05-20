@@ -422,6 +422,16 @@ export const ui = {
         score: "3.86",
         courses: ["DB1101 - Basic SQL"],
       },
+      {
+        institution: "Colegio Pre-Universitario Luis Alfredo Duvergé Mejía",
+        url: "",
+        area: "Bachiller técnico en informática",
+        studyType: "Bachelor",
+        startDate: "2018-01-01",
+        endDate: "2021-01-01",
+        score: "3.86",
+        courses: ["DB1101 - Basic SQL"],
+      },
     ],
     awards: [
       {
